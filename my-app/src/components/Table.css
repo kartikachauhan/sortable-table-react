@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+table{
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+    padding: 14px 0px 13px 0px;
+    width: 200px;
+    cursor: default;
+}
+
+td {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    padding: 14px 0px 13px 0px;
+    width: 200px;
+}
+
+thead th,
+tbody td {
+    text-align: left;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+td.product_name {
+    width: 300px;
+}
+
+td.product_category,
+thead th:nth-of-type(3) {
+    text-align: right;
+    width: auto;
+}
+
+thead tr{
+    background-color: #F7F7F7;
+}
+tbody tr:nth-of-type(odd) {
+    background-color: #FFFFFF;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #F7F7F7;
+}
+
+tbody tr:hover {
+    background-color: #F0F6FF;
+}
+
+thead th.ascending::after {
+    content: ' ';
+    border: 5px solid transparent;
+    border-bottom-color: #666666;
+    position: relative;
+    bottom: 11px;
+    left: 8px;
+}
+  
+thead th.descending::after {
+    content: ' ';
+    border: 5px solid transparent;
+    border-top-color: #666666;
+    position: relative;
+    top: 13px;
+    left: 8px;
+}
